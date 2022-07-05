@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>filter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h2>オンデマンド動画検索</h2>
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('python')"> Python</button>
+        <button class="btn" onclick="filterSelection('ansa')"> ANSA python</button>
+        <button class="btn" onclick="filterSelection('function')"> 関数</button>
+        <button class="btn" onclick="filterSelection('list')"> リスト</button>
+        <button class="btn" onclick="filterSelection('dictionary')"> ディクショナリ</button>
+        <button class="btn" onclick="filterSelection('module')"> モジュール</button>
+        <button class="btn" onclick="filterSelection('file')"> ファイル入出力</button>
+        <button class="btn" onclick="filterSelection('entity')"> ANSAエンティティ操作</button>
+        <button class="btn" onclick="filterSelection('casestudy')"> ANSApython事例紹介</button>
+    </div>
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+        <div class="filterDiv ansapython">1-1. ANSAの起動とScriptEditorの設定</div>
+        <div class="filterDiv python function">1-2. HelloWorld!を表示する</div>
+        <div class="filterDiv python">1-3. 変数と四則演算</div>
+        <div class="filterDiv python list dictionary">1-4. リストとディクショナリ</div>
+        <div class="filterDiv python list">1-5. リストを用いたfor,if文</div>
+        <div class="filterDiv python dictionary">1-6. ディクショナリを用いたfor,if文</div>
+        <div class="filterDiv python function">1-7. データ型について</div>
+        <div class="filterDiv ansa module">2-1. ANSA API関数</div>
+        <div class="filterDiv ansa entity">2-2. ANSAエンティティの取得</div>
+        <div class="filterDiv ansa entity">2-3. ANSAエンティティ情報の取得と書き換え</div>
+        <div class="filterDiv ansa entity">2-4. ANSAエンティティの作成</div>
+        <div class="filterDiv ansa casestudy module">2-5-1. 事例紹介 RBE節点の外れチェック（前半）</div>
+        <div class="filterDiv ansa casestudy">2-5-2. 事例紹介 RBE節点の外れチェック（後半）</div>
+        <div class="filterDiv ansa casestudy module">2-5-A. 事例紹介 RBE節点の外れチェック（補足）</div>
+        <div class="filterDiv python file">3-1. ファイル入出力（前半）</div>
+        <div class="filterDiv python file list">3-2. ファイル入出力（後半）</div>
+        <div class="filterDiv python file list">3-3. ファイル入出力（補足）</div>
+        <div class="filterDiv python file module">3-4. ファイル入出力（おまけ）</div>
+    </div>
+</body>
+
+</html>
