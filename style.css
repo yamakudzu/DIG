@@ -4,13 +4,27 @@
   
 .filterDiv {
     float: left;
-    background-color: #2196F3;
+    background-color: #91aeca;
     color: #ffffff;
-    width: 200px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
+    height: 380px;
+    width: 320px;
+    font-size: small;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin: 5px;
     display: none; /* Hidden by default */
+}
+
+.name {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+img {
+    width: 95%;
+    height: auto;
 }
   
 /* The "show" class is added to the filtered elements */
